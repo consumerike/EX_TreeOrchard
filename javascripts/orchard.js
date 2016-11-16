@@ -73,13 +73,13 @@ console.log("oak",oakTree );
 //print to DOM oak tree height and number of branches:
 let Orchard = window.setInterval(function() { 
 	pearTree.grow(2);
-	pearTree.trim(1)
+	pearTree.trim(1);
 	pearTree.countBranches();
 	if (pearTree.growCount === 30) {
 		window.clearInterval(Orchard);
 	}
 	document.getElementById("pear_tree").innerHTML = `Pear tree is now ${pearTree.height} inches with ${pearTree.branches} branches.`;
-	}, 1000)
+	}, 1000);
 
 
 // window.setInterval(function() { 
@@ -101,5 +101,5 @@ let Orchy = window.setInterval(function() {
 	}
 
 	document.getElementById("oak_tree").innerHTML = `Oak tree is now ${oakTree.height} inches with ${oakTree.branches} branches.`;
-	}, 1000)
+	}, 1000);
 	
